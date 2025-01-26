@@ -14,16 +14,19 @@ Python
 Google Cloud Platform (GCP):
 
 **Google Storage:** Storing raw and processed trip data.
-**Compute Instance:** Running ETL/ELT jobs and custom Python scripts.
-**BigQuery:** Executing SQL queries on large datasets for analytics.
-###Visualization:
 
-Looker Studio: Creating dashboards and visualizations for actionable insights.
+**Compute Instance:** Running ETL/ELT jobs and custom Python scripts.
+
+**BigQuery:** Executing SQL queries on large datasets for analytics.
+
+### Visualization:
+
+**Looker Studio:** Creating dashboards and visualizations for actionable insights.
 Modern Data Pipeline Tool:
 
-Mage: Building, orchestrating, and automating ETL/ELT pipelines for efficient data workflows.
-Contribute to the project here: Mage AI GitHub Repository
-Key Objectives
+**Mage:** Building, orchestrating, and automating ETL/ELT pipelines for efficient data workflows.
+
+## Key Objectives
 Ingest NYC taxi data into GCP storage.
 Build and automate data pipelines using Mage for transformation.
 Analyze and query data using BigQuery for meaningful insights.
