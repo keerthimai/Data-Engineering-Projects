@@ -52,6 +52,7 @@ Before that you need to know about star schema vs snow flake schema.
 A fact table contains quantitative measures or metrics that are used for analysis.They typically contains foreign keys that link to dimension tables.They contains columns that have high cardinality and change frequently.They contains columns that are not useful for analysis by themselves but are necessary for calculating metrics
 
 **Central table containing the core trip details such as:**
+
 vendor_id: Identifies the vendor.
 
 datetime_id: Links to the datetime_dim table.
@@ -64,31 +65,37 @@ Trip-specific metrics like fare_amount, tip_amount, total_amount, etc.
 A Dimension table contains columns that describes attributes of the data being analyzed.and they typically contains primary keys that link to fact tables.They contains columns that have low cardinality and dont change frequently,used for grouping or filtering data for analysis.
 
 **Datetime Dimension (datetime_dim):**
+
 Tracks temporal details of trips.
 
 Attributes include pickup_datetime, dropoff_datetime, hour, day, month, year, and weekday.
 
 **Pickup Location Dimension (pickup_location_dim):**
+
 Contains geospatial data for pickup locations.
 
 Attributes include pickup_latitude and pickup_longitude.
 
 **Drop Location Dimension (drop_location_dim):**
+
 Similar to pickup_location_dim but for drop-off locations.
 
 Tracks drop_latitude and drop_longitude.
 
 **Passenger Count Dimension (passenger_count_dim):**
+
 Tracks the number of passengers in a trip.
 
 Useful for analyzing trips by passenger groups.
 
 **Trip Distance Dimension (trip_distance_dim):**
+
 Represents trip distance categories.
 
 Useful for categorizing and analyzing trips based on distance traveled.
 
 **Rate Code Dimension (rate_code_dim):**
+
 Represents different rate codes used for trips.
 
 Attributes include rate_code_id and rate_code_name.
