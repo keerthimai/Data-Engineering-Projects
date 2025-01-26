@@ -11,7 +11,8 @@ Analytics and visualization of results using BigQuery and Looker Studio.
 ## Technology Used
 ### Programming Language:
 Python
-Google Cloud Platform (GCP):
+
+### Google Cloud Platform (GCP):
 
 **Google Storage:** Storing raw and processed trip data.
 
@@ -22,12 +23,16 @@ Google Cloud Platform (GCP):
 ### Visualization:
 
 **Looker Studio:** Creating dashboards and visualizations for actionable insights.
-Modern Data Pipeline Tool:
+
+### Modern Data Pipeline Tool:
 
 **Mage:** Building, orchestrating, and automating ETL/ELT pipelines for efficient data workflows.
 
 ## Key Objectives
 Ingest NYC taxi data into GCP storage.
+
 Build and automate data pipelines using Mage for transformation.
+
 Analyze and query data using BigQuery for meaningful insights.
+
 Visualize findings in Looker Studio for better decision-making.
